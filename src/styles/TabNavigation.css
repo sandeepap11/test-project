@@ -1,0 +1,17 @@
+nav {
+    margin: 0;    
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+    display: inline;
+    padding: 5px;
+}

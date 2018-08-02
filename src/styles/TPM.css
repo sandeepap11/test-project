@@ -1,0 +1,8 @@
+.tpm-main {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.tpm-card {
+    list-style: none;
+}

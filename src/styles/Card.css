@@ -1,0 +1,8 @@
+.card-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    border: orangered 2px solid;
+    flex-direction: column;
+    text-align: center;
+}
