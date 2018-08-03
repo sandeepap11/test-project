@@ -1,0 +1,25 @@
+	EXHIBIT ITEMS
+		Validated Exhibit Items
+			Tile and List view of Exhibit Items / Evidence with Search - Exhibit Items -> Type on left (Img / Video / Doc), Reference No., Location, Source, Duration, Received Date, etc.
+			Filter by Type tabs
+		Ingest Queue (Int / Ext)
+			Same as above one. On click go to details page.
+		Triage Deletion
+			Same as above with delete confirmation option.
+		Admin page
+			Form to assign people to roles
+
+	MANAGEMENT
+		Trusted Partner
+			Create
+				Create Org, Branch, Individual - Confirm with ID.
+			Manage
+				List Orgs
+					On click show branches + Activity Log Link - option to add Branch with Org as Yes
+						On click show Individuals + Activity Log Link - option to add Individual with Org and Branch as Yes
+			User Access
+					Table with bunch of configurations. Option to edit.
+
+	REPORTING
+		Two tiles for Reports (Escalation / Due for Deletion)
+			Tables with sort options, Save to excel, print, PDF, Copy to Clipboard, CSV

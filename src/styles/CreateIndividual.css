@@ -1,0 +1,24 @@
+.create-individual-form {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.create-individual-input {
+    width: 60%;
+    display: inline-block;
+}
+
+.create-individual-label {
+    width: 40%;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.create-individual-submit {
+    width: 20%;
+    text-align: center;
+    margin-left: 20%;
+}

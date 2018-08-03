@@ -1,0 +1,13 @@
+.create-partner-main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.create-partner-forms {
+    width: 70%;
+}
+
+.create-partner-status {
+    width: 25%;
+}

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import CreateOrg from './CreateOrg';
 import CreateBranch from './CreateBranch';
+import CreateIndividual from './CreateIndividual';
+import '../styles/CreatePartner.css';
 
 class CreatePartner extends Component {
 
     state = {
         orgCreated: false,
         branchCreated: false,
-        userCreated: false
+        individualCreated: false
     };
 
     handleOrgCreate = (values) => {
@@ -22,20 +24,40 @@ class CreatePartner extends Component {
 
     };
 
+    handleIndividualCreate = (values) => {
+        console.log(values);
+        this.setState({ individualCreated: true });
+
+    };
+
     render() {
 
-        const { orgCreated, branchCreated, userCreated } = this.state;
+        const { orgCreated, branchCreated, individualCreated } = this.state;
 
         return (
-            <div>
-                <div>
-                    {!orgCreated && <CreateOrg onCreateOrg={this.handleOrgCreate} />}
-                    {orgCreated && !branchCreated && <CreateBranch onCreateBranch={this.handleBranchCreate} />}
+            <div className="create-partner-main">
+                <div className="create-partner-forms">
+                    {
+                        !orgCreated &&
+                        <CreateOrg onCreateOrg={this.handleOrgCreate} />
+                    }
+                    {
+                        orgCreated && !branchCreated &&
+                        <CreateBranch onCreateBranch={this.handleBranchCreate} />
+                    }
+                    {
+                        orgCreated && branchCreated && !individualCreated &&
+                        <CreateIndividual onCreateIndividual={this.handleIndividualCreate} />
+                    }
+                    {
+                        orgCreated && branchCreated && individualCreated &&
+                        "All Details added. Here's your ID: A1S0-93ER-ED92-CS5P"
+                    }
                 </div>
-                <div>
+                <div className="create-partner-status">
                     <h2>Create Org</h2><div>{orgCreated ? "YES" : "NO"}</div>
                     <h2>Create Branch</h2><div>{branchCreated ? "YES" : "NO"}</div>
-                    <h2>Create User</h2><div>{userCreated ? "YES" : "NO"}</div>
+                    <h2>Create Individual</h2><div>{individualCreated ? "YES" : "NO"}</div>
                 </div>
             </div>
         );
