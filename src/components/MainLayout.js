@@ -7,7 +7,9 @@ class MainLayout extends Component {
 
         const tabs = [{
             name: "Exhibit Items",
-            tab: "Tab 1"
+            tab:       
+            
+            <button type="button" class="btn btn-primary">Primary</button>
         },
         {
             name: "Validate Items",
